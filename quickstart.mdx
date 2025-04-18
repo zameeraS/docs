@@ -34,44 +34,206 @@ To access the WhatsApp Business API, you'll first need a Facebook Developer acco
   </Tab>
 </Tabs>
 
-## Step 2: Create a New App for WhatsApp
+### Step 2: Create a New App for WhatsApp
 
 1. Choose **Business** as the app type.
-2. Enter an app name (e.g., `My WhatsApp Integration`).
+2. Enter an app name (e.g., `My QuickTalk Integration`).
 3. Select or create a **Business Account**.
 4. Click **Create App**.
-![Phone Verification Screenshot](/images/create_app.png)
 
-## Step 3: Add the WhatsApp Business API Product
+<Tabs>
+  <Tab title="Step 1">
+    <img src="/images/b.jpg" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 2">
+    <img src="/images/7.png" alt="Step 1 - Step 1" />
+  </Tab>
+  <Tab title="Step 3">
+    <img src="/images/a.jpg" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 4">
+    <img src="/images/9.png" alt="Step 1 - Step 2" />
+  </Tab>
+</Tabs>
 
-1. In your app dashboard, click **Add Product**.
-2. Find **WhatsApp** and click **Set Up**.
+### Step 3: Add the WhatsApp Business API Product
 
-## Step 4: Link Your WhatsApp Business Account
+1. In products, find **WhatsApp** and click **Set Up**.
+2. Create your **business portfolio**.
+3. After creating portfolio, and confirming your email you'll be redirected to **meta business platform** to continue the setup.
+<Tabs>
+  <Tab title="Step 1">
+    <img src="/images/c.jpg" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 2">
+    <img src="/images/11.jpg" alt="Step 1 - Step 1" />
+  </Tab>
+  <Tab title="Step 3">
+    <img src="/images/d.jpg" alt="Step 1 - Step 2" />
+  </Tab>
+</Tabs>
+### Step 4: Link Your WhatsApp Business Account
 
 1. On the WhatsApp setup page, click **Link WhatsApp Account**.
 2. Log in if prompted.
 3. Choose your WhatsApp Business Account or create a new one.
+4. You'll be able to see your added phone number under the **WhatsApp Manager** on Meta Business Suite.
 
-## Step 5: Verify Your Phone Number
+<Tabs>
+  <Tab title="Step 1">
+    <img src="/images/14.png" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 2">
+    <img src="/images/15.png" alt="Step 1 - Step 1" />
+  </Tab>
+  <Tab title="Step 3">
+    <img src="/images/16.png" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 4">
+    <img src="/images/17.png" alt="Step 1 - Step 2" />
+  </Tab>
+</Tabs>
+### Step 5: Connect Your WhatsApp Number to Your Business Profile
 
-1. Go to the **Phone Numbers** section.
-2. Click **Add Phone Number**.
-3. Enter and verify your number via SMS or voice call.
+1. In your **Facebook Developer Account**, ensure your business is added to your **Business Portfolio**.
+2. Navigate to **WhatsApp > Quickstart** in the Developer Dashboard and click **Start using the API**.
+3. Click **Add Phone Number** and follow the steps to register your number.
 
-## Step 6: Set Up Webhooks
+> 📌 Make sure to use the **same phone number** that you previously added in **Meta Business Suite**.
+
+<Tabs>
+  <Tab title="Step 1">
+    <img src="/images/18.png" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 2">
+    <img src="/images/19.png" alt="Step 1 - Step 1" />
+  </Tab>
+  <Tab title="Step 3">
+    <img src="/images/20.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 4">
+    <img src="/images/21.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 5">
+    <img src="/images/22.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 6">
+    <img src="/images/23.png" alt="Step 1 - Step 2" />
+  </Tab>
+</Tabs>
+
+### Step 6: Add a System User & Generate a Permanent Token
+
+1. Open [Meta Business Settings](https://business.facebook.com/settings).
+2. In the left sidebar, go to **Users > System Users**.
+3. Follow the steps shown below, to add a system user.
+4. Go back to **Business Settings > System Users**.
+5. Select the system user you created.
+6. Under **Assigned Assets**, click **Add Assets**, and give access to the app and WhatsApp account.
+7. Then under the system user, click **Generate Token**.
+8. Choose the app you created and select the necessary permissions.
+9. Click **Generate Token**.
+
+> 🛡️ **Note:** This token can be used as a long-lived token. Store it securely.
+
+<Tabs>
+  <Tab title="Step 1">
+    <img src="/images/25.png" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 2">
+    <img src="/images/26.png" alt="Step 1 - Step 1" />
+  </Tab>
+  <Tab title="Step 3">
+    <img src="/images/27.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 4">
+    <img src="/images/28.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 5">
+    <img src="/images/29.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 6">
+    <img src="/images/30.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 7">
+    <img src="/images/31.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 8">
+    <img src="/images/32.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 9">
+    <img src="/images/33.png" alt="Step 1 - Step 2" />
+  </Tab>
+</Tabs>
+
+### Step 7: Register Your Mobile Number via Postman
+
+1. Go to the **Facebook Developer Platform** and navigate to:  
+   `WhatsApp > API Setup`
+
+2. Copy the **Phone Number ID** shown there.
+
+3. Open **Postman** and create a **POST** request with the following details:
+
+   - **URL**  
+     ```
+     https://graph.facebook.com/v18.0/{PHONE_NUMBER_ID}/register
+     ```
+
+   - **Headers**
+     ```
+     Authorization: Bearer ACCESS_TOKEN
+     Content-Type: application/json
+     ```
+
+   - **Body**
+     ```json
+     {
+       "messaging_product": "whatsapp",
+       "pin": "YOUR_OTP_CODE"
+     }
+     ```
+
+   > Replace `ACCESS_TOKEN` with the token generated for your system user (from the previous step).  
+   > Replace `YOUR_OTP_CODE` with the OTP you received during number verification.
+
+4. Click **Send**.  
+   If the response contains `"success": true`, your number will show as **Connected** in **Meta Business Suite** under the WhatsApp section.
+
+<Tabs>
+  <Tab title="Step 1">
+    <img src="/images/24.png" alt="Step 1 - Step 2" />
+  </Tab>
+  <Tab title="Step 2">
+    <img src="/images/34b.png" alt="Step 1 - Step 1" />
+  </Tab>
+  <Tab title="Step 3">
+    <img src="/images/34.png" alt="Step 1 - Step 2" />
+  </Tab>
+    <Tab title="Step 4">
+    <img src="/images/35.png" alt="Step 1 - Step 2" />
+  </Tab>
+</Tabs>
+
+### Step 8: Set Up Webhooks
 
 1. Go to **Configuration** under the **WhatsApp** product.
 2. Click **Setup Webhooks**.
-3. Enter your webhook URL.  
+3. Enter your webhook URL for WhatsApp Integration, provided on *QuickTalk* Dashboard.  
    Example: `https://yourdomain.com/webhook`
 4. Generate and save a **Verify Token**.
 5. Click **Verify and Save**.
+<Tabs>
+  <Tab title="Step 1">
+    <img src="/images/36.png" alt="Step 1 - Step 2" />
+  </Tab>
+</Tabs>
 
-## Step 7: Go Live
+## Step 9: You are now Live on WhatsApp!
 
-1. Test message sending and receiving.
-2. Monitor your webhook logs.
+1. Open WhatsApp and send a message to the phone number you just registered.
+2. If everything is set up correctly, your app can now respond.
+3. Congratulations — your WhatsApp API integration is now live! 🎉
 
 ---
 

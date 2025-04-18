@@ -1,0 +1,26 @@
+{
+  "name": "Najoomi",
+  "logo": {
+    "light": "/images/dark_logo.png",
+    "dark": "/images/dark_logo.png",
+    "logoTitle": "Najoomi",
+    "height": 180
+  },
+  "favicon": "/images/favicon.svg",
+  "colors": {
+    "primary": "#001ce0",
+    "light": "#e3f307",
+    "dark": "#001ce0"
+  },
+  "footerSocials": {
+    "x": "https://x.com/najoomitech",
+    "website": "https://quicktalk.najoomi.ai/",
+  "linkedin": "https://www.linkedin.com/company/najoomi/",
+  "youtube": "https://www.youtube.com/watch?v=4lt34z4cxj4",
+  "instagram": "https://www.instagram.com/najoomitechnologies/",
+  "facebook": "https://www.facebook.com/profile.php?id=61571355689803"
+  },
+  "navigation": [
+    { "group": "Getting Started", "pages": ["introduction", "quickstart"] }
+  ]
+}
