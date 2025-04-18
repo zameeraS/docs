@@ -21,6 +21,6 @@
   "facebook": "https://www.facebook.com/profile.php?id=61571355689803"
   },
   "navigation": [
-    { "group": "Getting Started", "pages": ["introduction", "quickstart"] }
+    { "group": "Getting Started", "pages": ["quickstart"] }
   ]
 }
