@@ -21,6 +21,6 @@
   "facebook": "https://www.facebook.com/profile.php?id=61571355689803"
   },
   "navigation": [
-    { "group": "Getting Started", "pages": ["QuickTalk-WhatsApp Integration"] }
+    { "group": "Getting Started", "pages": ["QuickTalk-WhatsApp"] }
   ]
 }
