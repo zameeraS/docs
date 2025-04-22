@@ -4,6 +4,18 @@ description: >
   A step-by-step guide to help you connect your WhatsApp Business account to our webhook system.
   By the end, you'll be able to send and receive messages through our system using the WhatsApp Business API.
 ---
+### Phone Number Requirements
+
+To be eligible for registration, your business phone number must:
+
+- Be **owned by you**
+- Have a valid **country and area code** (short codes are not supported)
+- Be **able to receive voice calls or SMS** (you'll receive a message to verify ownership)
+
+> ✅ Registered numbers can still be used for everyday purposes, such as calling and texting.
+
+> ⚠️ **Important:**  
+> Numbers already in use with the WhatsApp Messenger app or WhatsApp Business app **cannot be registered** unless they are **deleted first** from those apps.
 
 ### Step 1: Create a Facebook Developer Account
 
@@ -103,7 +115,9 @@ To access the WhatsApp Business API, you'll first need a Facebook Developer acco
 2. Navigate to **WhatsApp > Quickstart** in the Developer Dashboard and click **Start using the API**.
 3. Click **Add Phone Number** and follow the steps to register your number.
 
-> 📌 Make sure to use the **same phone number** that you previously added in **Meta Business Suite**.
+<Note>
+Make sure to use the **same phone number** that you previously added in **Meta Business Suite**.
+</Note>
 
 <Tabs>
   <Tab title="Step 1">
@@ -138,7 +152,9 @@ To access the WhatsApp Business API, you'll first need a Facebook Developer acco
 8. Choose the app you created and select the necessary permissions.
 9. Click **Generate Token**.
 
-> 🛡️ **Note:** This token can be used as a long-lived token. Store it securely.
+<Note>
+This token can be used as a long-lived token. Store it securely.
+</Note>
 
 <Tabs>
   <Tab title="Step 1">
@@ -198,8 +214,10 @@ To access the WhatsApp Business API, you'll first need a Facebook Developer acco
      }
      ```
 
-   > Replace `ACCESS_TOKEN` with the token generated for your system user (from the previous step).  
-   > Replace `YOUR_OTP_CODE` with the OTP you received during number verification.
+<Note>
+Replace `ACCESS_TOKEN` with the token generated for your system user (from the previous step).
+Replace `YOUR_OTP_CODE` with the OTP you received during number verification.
+</Note>
 
 4. Click **Send**.  
    If the response contains `"success": true`, your number will show as **Connected** in **Meta Business Suite** under the WhatsApp section.
